@@ -1,38 +1,55 @@
-# create-svelte
+# Anything List app
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Built this project under the Svelte Hackathon using Svelte web technology to create a list app that is multi-functional for every day integrating it with [Appwrite](https://appwrite.io/).
 
-## Creating a project
+Anything List app is a single app that lists all your activities, shopping lists, adventures etc. Anything you think of, the Anything List app is there for you.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Proudly organised by
+
+[Svelte Society](https://sveltesociety.dev/)
+
+## Demo
+
+![anything list app](https://user-images.githubusercontent.com/25850598/232615816-e83eeb31-daa7-4f20-ad34-51ec8c16ff6a.gif)
+
+Try the demo [live](https://appwrite-svelte-list-app-vwoo.vercel.app/)
+
+## Run Locally
+
+Clone the project
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+  git clone git@github.com:Terieyenike/appwrite-svelte-list-app.git
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Go to the project directory
 
 ```bash
-npm run dev
+  cd appwrite-svelte-list-app
+```
 
-# or start the server and open the app in a new browser tab
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
 npm run dev -- --open
 ```
 
-## Building
+## Environment variables
 
-To create a production version of your app:
+To run this project, you will need to add the following environment variables to your `.env` file
 
-```bash
-npm run build
-```
+Reference the [.env.local](.env.local)
 
-You can preview the production build with `npm run preview`.
+## Deployment
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [Vercel](https://vercel.com/)
+
+## Authors
+
+- [@terieyenike](https://www.twitter.com/terieyenike)
