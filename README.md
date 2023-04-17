@@ -14,6 +14,12 @@ Anything List app is a single app that lists all your activities, shopping lists
 
 Try the demo [live](https://appwrite-svelte-list-app-vwoo.vercel.app/)
 
+## Tech Stack
+
+**Client:** Svelte, TailwindCSS
+
+**Server:** Appwrite
+
 ## Run Locally
 
 Clone the project
