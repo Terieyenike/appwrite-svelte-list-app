@@ -20,6 +20,10 @@ Try the demo [live](https://appwrite-svelte-list-app-vwoo.vercel.app/)
 
 **Server:** Appwrite
 
+## Create a Cloud Appwrite instance
+
+[Appwrite Cloud](https://cloud.appwrite.io/)
+
 ## Run Locally
 
 Clone the project
