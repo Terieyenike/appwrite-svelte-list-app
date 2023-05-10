@@ -26,3 +26,6 @@ export const getList = databases.listDocuments(
   "643d4ddb5fed74d34e7a",
   "643d4defa83ec8f41674"
 );
+
+export const deleteList = (database_id, collection_id, data) =>
+  databases.deleteDocument(database_id, collection_id, data);

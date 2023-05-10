@@ -2,6 +2,7 @@
   import { getList, create } from "../utils";
   import { onMount } from "svelte";
   import { data } from "../store";
+  import ItemList from "../lib/ItemList.svelte";
 
   let lists = [];
 
@@ -16,7 +17,7 @@
     );
   });
 
-  function addToCart(e) {
+  function addToList(e) {
     if (!$data.name) {
       return;
     } else if (e.key !== "Enter") {
@@ -46,7 +47,7 @@
   <input
     type="text"
     placeholder="enter item"
-    on:keydown={addToCart}
+    on:keydown={addToList}
     bind:value={$data.name}
     class="bg-gray-200 p-4 border-0 text-slate-600 rounded-lg text-center text-xl my-3"
   />
@@ -54,9 +55,9 @@
   <ul class="flex p-0 flex-wrap gap-3 mt-4">
     {#each lists as list (list.$id)}
       <li
-        class="md:text-4xl lg:text-2xl bg-slate-100 p-4 rounded-lg grow text-center shadow hover:bg-orange-200 cursor-pointer"
+        class="md:text-4xl lg:text-2xl bg-slate-100 p-5 rounded-lg grow text-center shadow hover:bg-orange-200 cursor-pointer"
       >
-        {list.item}
+        <ItemList {list} />
       </li>
     {/each}
   </ul>
