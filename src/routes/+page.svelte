@@ -39,6 +39,7 @@
 </script>
 
 <div class="w-4/5 mx-auto max-w-6xl flex flex-col lg:w-6/12 select-none">
+  <p class="text-center my-6">Delete an item with a click.</p>
   <img
     src="assets/app-launch.svg"
     alt="Launch rocket"
