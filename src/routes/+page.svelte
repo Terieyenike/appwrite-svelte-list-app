@@ -26,7 +26,7 @@
       item: $data.name,
     }).then(
       function (response) {
-        console.log(response); // Success
+        console.log(response);
         window.location.reload();
       },
       function (error) {
