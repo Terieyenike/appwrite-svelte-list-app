@@ -55,7 +55,7 @@
 
   <ul class="flex p-0 flex-wrap gap-3 mt-4">
     {#if lists.length == 0}
-      <p>No data in the database</p>
+      <p class="m-auto mt-8">No data in the database</p>
     {:else}
       {#each lists as list (list.$id)}
         <li
