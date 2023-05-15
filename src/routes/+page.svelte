@@ -54,12 +54,16 @@
   />
 
   <ul class="flex p-0 flex-wrap gap-3 mt-4">
-    {#each lists as list (list.$id)}
-      <li
-        class="md:text-4xl lg:text-2xl bg-slate-100 p-5 rounded-lg grow text-center shadow hover:bg-orange-200 cursor-pointer"
-      >
-        <ItemList {list} />
-      </li>
-    {/each}
+    {#if lists.length == 0}
+      <p>No data in the database</p>
+    {:else}
+      {#each lists as list (list.$id)}
+        <li
+          class="md:text-4xl lg:text-2xl bg-slate-100 p-5 rounded-lg grow text-center shadow hover:bg-orange-200 cursor-pointer"
+        >
+          <ItemList {list} />
+        </li>
+      {/each}
+    {/if}
   </ul>
 </div>
