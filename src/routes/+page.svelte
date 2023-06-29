@@ -38,7 +38,9 @@
   }
 </script>
 
-<div class="w-4/5 mx-auto max-w-6xl flex flex-col lg:w-6/12 select-none">
+<div
+  class="w-4/5 mx-auto max-w-6xl flex flex-col lg:w-6/12 select-none min-h-screen"
+>
   <p class="text-center my-6">Delete an item with a click.</p>
   <img
     src="assets/app-launch.svg"
@@ -66,4 +68,16 @@
       {/each}
     {/if}
   </ul>
+
+  <footer class="mt-auto">
+    <div class="flex item-center justify-center">
+      <address>
+        Built by
+        <span>
+          <a href="https://twitter.com/terieyenike" target="_">Teri</a>
+        </span>
+        &copy; 2023
+      </address>
+    </div>
+  </footer>
 </div>
