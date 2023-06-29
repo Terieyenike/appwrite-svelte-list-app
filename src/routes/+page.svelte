@@ -70,14 +70,27 @@
   </ul>
 
   <footer class="mt-auto">
-    <div class="flex item-center justify-center">
+    <div class="mt-10 text-center text-gray-500">
       <address>
         Built by
-        <span>
+        <span class="text-blue-600">
           <a href="https://twitter.com/terieyenike" target="_">Teri</a>
         </span>
         &copy; 2023
       </address>
+      <div>
+        <p>
+          Fork, clone, and star this
+
+          <a
+            href="https://github.com/Terieyenike/appwrite-svelte-list-app"
+            target="_"
+            rel="noopener noreferrer"
+            class="text-blue-600">repo</a
+          >
+        </p>
+      </div>
+      <p class="text-sm">Appwrite x Svelte x Tailwind CSS</p>
     </div>
   </footer>
 </div>
