@@ -4,19 +4,6 @@
   import { data } from "../store";
   import ItemList from "../lib/ItemList.svelte";
 
-  import { Hanko } from "@teamhanko/hanko-elements";
-  import { goto } from "$app/navigation";
-  import { env } from "$env/dynamic/public";
-  const hankoApi = env.PUBLIC_HANKO_API_URL;
-
-  const hanko = new Hanko(hankoApi);
-  const logout = () => {
-    hanko.user.logout().catch((error) => {
-      console.log(error);
-    });
-    goto("/login");
-  };
-
   let lists = [];
 
   onMount(() => {
@@ -55,8 +42,6 @@
   class="w-4/5 mx-auto max-w-6xl flex flex-col lg:w-6/12 select-none min-h-screen"
 >
   <p class="text-center my-6">Delete an item with a click.</p>
-  <button on:click={logout} class="text-slate-500">Logout</button>
-
   <img
     src="assets/app-launch.svg"
     alt="Launch rocket"
